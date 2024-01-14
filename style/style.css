@@ -5,7 +5,7 @@ font-family: 'Manrope', sans-serif;
 font-family: 'Poppins', sans-serif;
 font-family: 'Roboto', sans-serif; */
 
-:root{
+:root {
     --primary-font: 'Poppins', sans-serif;
     --descr-font: 'Inter', sans-serif;
     --footer-font: 'Manrope', sans-serif;
@@ -15,33 +15,139 @@ font-family: 'Roboto', sans-serif; */
 
 }
 
+body {
+    width: 1440px;
+    margin: 0 auto;
+}
+
 /* Header style */
-.nav{
+header {
+    margin: 0 120px;
+}
+
+.nav {
     display: flex;
     justify-content: space-between;
-    margin: 87px 120px 120px;
     align-items: center;
+    margin-bottom: 55px;
 }
-.nav h3{
+
+.nav h3 {
     font-family: var(--primary-font);
     font-size: 1.5rem;
     font-weight: 700;
 }
-.nav ul{
+
+.nav ul {
     display: flex;
     gap: 20px;
     color: var(--primary-color);
     align-items: center;
 }
-.nav ul li{
+
+.nav ul li {
     list-style: none;
-    
+
 }
-.nav ul li a{
+
+.nav ul li a {
     text-decoration: none;
     font-family: 'Manrope', sans-serif;
     color: var(--primary-color);
     font-weight: 600;
+}
+
+.camera-journey {
+    display: flex;
+    justify-content: space-between;
+}
+
+.journey h3 {
+    font-family: var(--primary-font);
+    color: var(--primary-color);
+    font-size: 3.25rem;
+    font-weight: 700;
+    line-height: 4.375rem;
+    width: 582px;
+    margin-top: 140px;
+    margin-bottom: 0;
+}
+
+.journey h4 {
+    font-family: var(--primary-font);
+    font-weight: 600;
+    color: var(--primary-color);
+    width: 505px;
+}
+
+.btn-preebook {
+    font-family: var(--primary-font);
+    font-weight: 700;
+    color: #fff;
+    background-color: #E02C6D;
+    border: none;
+    border-radius: 41px;
+    padding: 10px 24px;
+}
+
+.camera {
+    background-image: url(../images/Circle\ design.svg);
+    background-repeat: no-repeat;
+}
+
+.camera img {
+    padding: 30px 33px 31px 2px;
+}
 
 
+
+
+
+
+
+
+
+
+@media screen and (max-width: 576px) {
+    body {
+        width: 100%;
+        margin: 0;
+    }
+
+    header {
+        margin: 0 20px;
+    }
+
+    .nav,
+    .camera-journey,
+    .nav ul {
+        flex-direction: column;
+    }
+
+    .nav {
+        text-align: center;
+    }
+
+    .camera-journey {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .journey h3 {
+        width: 100%;
+    }
+
+    .journey h4 {
+        width: 100%;
+    }
+
+    .camera {
+        text-align: center;
+        background-size: 75%;
+        background-position: center;
+    }
+
+    .camera img {
+        width: 70%;
+    }
 }

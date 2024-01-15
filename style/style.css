@@ -100,24 +100,29 @@ header {
     padding: 30px 33px 31px 2px;
 }
 
-main{
+main {
     margin: 70px 165px 165px;
     padding-top: 10px;
 }
-hr{
+
+hr {
     height: 1px;
     border: 0;
     background: linear-gradient(90deg, rgba(192, 204, 218, 0.10) 0%, rgba(192, 204, 218, 0.60) 50.38%, rgba(192, 204, 218, 0.10) 100%);
 }
-.website{
+
+.website {
     display: flex;
     justify-content: space-evenly;
     margin: 30px;
 }
-.popular{
+
+.popular {
     margin: 100px 32px 31px;
+    position: relative;
 }
-.popular>h3{
+
+.popular>h3 {
     font-family: var(--primary-font);
     color: var(--primary-color);
     font-weight: 600;
@@ -125,30 +130,34 @@ hr{
     line-height: 70px;
     text-align: center;
 
-    
+
 }
-.img-container{
+
+.img-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    
+
 }
-.img-box{
+
+.img-box {
     justify-content: center;
     background: #fff;
     box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
     padding: 17px 14px;
-    
+
 }
-.box-title{
+
+.box-title {
     font-family: var(--primary-font);
     color: var(--primary-color);
     font-size: 1.75rem;
     font-weight: 500;
     margin: 0;
 }
-.price{
+
+.price {
     font-family: var(--descr-font);
     font-size: 1.5rem;
     color: rgba(0, 0, 0, 0.87);
@@ -156,21 +165,45 @@ hr{
     line-height: 150%;
     margin: 10px 0;
 }
-.rating{
+
+.rating {
     color: #5E6366;
     font-family: var(--rating-font);
+    font-size: 0.875rem;
     font-weight: 700;
     line-height: 22px;
     letter-spacing: 0.1px;
     margin: 0;
 }
-.descr{
+
+.descr {
     font-family: var(--descr-font);
     color: var(--color-gray);
     margin: 0;
 
 }
 
+.more-btn {
+    justify-content:end;
+    display: flex;
+    margin-top: 50px;
+}
+.more-btn button{
+    font-family: var(--primary-font);
+    color: rgba(224, 44, 109, 0.87);
+    font-weight: 700;
+    border: none;
+    align-items: center;
+    background: none;
+    display: flex;
+    gap: 8px;
+}
+
+/* featured section style */
+.featured {
+    display: flex;
+    margin: 100px 165px;
+}
 
 
 
@@ -196,8 +229,10 @@ hr{
         flex-direction: column;
     }
 
-    .nav {
+    .nav,
+    .nav ul {
         text-align: center;
+        padding: 0;
     }
 
     .camera-journey {
@@ -223,5 +258,32 @@ hr{
         width: 70%;
     }
 
+    main {
+        margin: 0 20px;
+    }
+
+    .img-container {
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+    }
+
+    .img-box>img {
+        width: 100%;
+    }
+
+    .popular {
+        margin: 0 auto;
+    }
+
+    .website {
+        flex-wrap: wrap;
+        margin: 0px;
+        padding: 0 40px;
+        gap: 20px;
+    }
+
+    hr {
+        display: none;
+    }
 
 }

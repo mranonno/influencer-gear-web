@@ -184,11 +184,12 @@ hr {
 }
 
 .more-btn {
-    justify-content:end;
+    justify-content: end;
     display: flex;
     margin-top: 50px;
 }
-.more-btn button{
+
+.more-btn button {
     font-family: var(--primary-font);
     color: rgba(224, 44, 109, 0.87);
     font-weight: 700;
@@ -202,9 +203,69 @@ hr {
 /* featured section style */
 .featured {
     display: flex;
-    margin: 100px 165px;
+    justify-content: space-between;
+    margin-top: 100px;
+    gap: 96px;
 }
 
+.featured-title {
+    font-family: var(--primary-font);
+    font-size: 2.375rem;
+    color: #0A0826;
+    font-weight: 700;
+    line-height: 60px;
+    margin-bottom: 0;
+
+}
+
+.featured-descr {
+    font-family: var(--primary-font);
+    color: var(--color-gray);
+    font-weight: 700;
+    width: 500px;
+}
+
+.join-btn {
+    font-family: var(--primary-font);
+    font-weight: 700;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #E02C6D;
+    border: none;
+    padding: 10px 24px;
+}
+
+
+footer {
+    width: 100%;
+    background: #0A0826;
+    border: none;
+}
+.footer-container{
+    text-align: center;
+    padding: 50px 589px;
+}
+.footer-title {
+    color: #FFF;
+    font-family: var(--primary-font);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.copyright {
+    color: #D9DBE1;
+    font-family: var(--footer-font);
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+}
+.footer-img{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
 
 
 
@@ -285,5 +346,35 @@ hr {
     hr {
         display: none;
     }
+    .featured{
+        flex-direction: column-reverse;
+        margin-top: 20px;
+        text-align: center;
+        justify-content: center;
+    }
+    .featured-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .featured-title {
+        text-align: center;
+    }
+    .featured-descr{
+        width: auto;
+        text-align: center;
+    }
+    .featured-img img{
+        width: 100%;
+    }
 
+    footer{
+        margin-top: 50px;
+        width: 100%;
+    }
+    .footer-container{
+        text-align: center;
+        padding: 50px 68px;
+    }
 }

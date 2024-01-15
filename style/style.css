@@ -60,6 +60,7 @@ header {
 .camera-journey {
     display: flex;
     justify-content: space-between;
+    margin: 50px 0;
 }
 
 .journey h3 {
@@ -97,6 +98,77 @@ header {
 
 .camera img {
     padding: 30px 33px 31px 2px;
+}
+
+main{
+    margin: 70px 165px 165px;
+    padding-top: 10px;
+}
+hr{
+    height: 1px;
+    border: 0;
+    background: linear-gradient(90deg, rgba(192, 204, 218, 0.10) 0%, rgba(192, 204, 218, 0.60) 50.38%, rgba(192, 204, 218, 0.10) 100%);
+}
+.website{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px;
+}
+.popular{
+    margin: 100px 32px 31px;
+}
+.popular>h3{
+    font-family: var(--primary-font);
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 70px;
+    text-align: center;
+
+    
+}
+.img-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    
+}
+.img-box{
+    justify-content: center;
+    background: #fff;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    padding: 17px 14px;
+    
+}
+.box-title{
+    font-family: var(--primary-font);
+    color: var(--primary-color);
+    font-size: 1.75rem;
+    font-weight: 500;
+    margin: 0;
+}
+.price{
+    font-family: var(--descr-font);
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.87);
+    font-weight: 400;
+    line-height: 150%;
+    margin: 10px 0;
+}
+.rating{
+    color: #5E6366;
+    font-family: var(--rating-font);
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.1px;
+    margin: 0;
+}
+.descr{
+    font-family: var(--descr-font);
+    color: var(--color-gray);
+    margin: 0;
+
 }
 
 
@@ -150,4 +222,6 @@ header {
     .camera img {
         width: 70%;
     }
+
+
 }
